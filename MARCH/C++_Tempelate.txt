@@ -1,0 +1,44 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define endl "\n"
+#define pb push_back
+#define ll long long int
+#define vi vector<int>
+#define vll vector<ll>
+#define vvi vector < vi >
+#define pii pair<int,int>
+#define pll pair<long long, long long>
+#define mod 1000000007
+#define inf 1000000000000000001;
+#define all(v) v.begin(),v.end()
+#define mp(x,y) make_pair(x,y)
+#define f first
+#define s second
+#define tez ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL); cerr.tie(NULL);
+#define fori0n for(ll i=0;i<n;i++)
+#define fori1n for(ll i=1;i<n;i++)
+
+void count(ll n){
+    ll sum = 0;
+    sum += n;
+    sum += n*n;
+    sum += n*n*n;
+    sum %= 1000000007;
+    cout<<sum;
+}
+
+void solve(){
+    ll n;
+    cin>>n;
+    count(n);
+}
+
+int main(){
+    tez;
+    int t=1;
+    //cin>>t;
+    while(t--){
+        solve();
+    }
+    return 0;
+}
